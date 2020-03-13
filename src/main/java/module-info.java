@@ -1,7 +1,7 @@
-module com.olebas {
+module com.olebas.jfxapp {
     requires javafx.controls;
     requires javafx.fxml;
 
-    opens com.olebas to javafx.fxml;
-    exports com.olebas;
+    opens com.olebas.jfxapp to javafx.fxml;
+    exports com.olebas.jfxapp;
 }

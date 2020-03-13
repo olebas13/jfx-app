@@ -36,7 +36,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.1</version>
                 <configuration>
-                    <mainClass>com.olebas.App</mainClass>
+                    <mainClass>com.olebas.jfxapp.Main</mainClass>
                 </configuration>
             </plugin>
         </plugins>

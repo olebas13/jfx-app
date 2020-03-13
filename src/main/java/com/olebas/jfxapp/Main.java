@@ -1,4 +1,4 @@
-package com.olebas;
+package com.olebas.jfxapp;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -11,13 +11,13 @@ import java.io.IOException;
 /**
  * JavaFX App
  */
-public class App extends Application {
+public class Main extends Application {
 
     private static Scene scene;
 
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(App.class.getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(Main.class.getResource("sample.fxml"));
         stage.setTitle("Hello World");
         stage.setScene(new Scene(root, 700, 400));
         stage.show();

@@ -1,4 +1,4 @@
-package com.olebas;
+package com.olebas.jfxapp;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
