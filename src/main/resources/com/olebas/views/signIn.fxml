@@ -7,16 +7,16 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.olebas.jfxapp.Controller">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.olebas.jfxapp.SignInController">
    <children>
       <AnchorPane layoutY="108.0" prefHeight="292.0" prefWidth="700.0" style="-fx-background-color: #fafafa;">
          <children>
-            <TextField fx:id="login_field" layoutX="218.0" layoutY="70.0" prefHeight="26.0" prefWidth="264.0" promptText="Login" style="-fx-border-color: SILVER;">
+            <TextField fx:id="loginField" layoutX="218.0" layoutY="70.0" prefHeight="26.0" prefWidth="264.0" promptText="Login" style="-fx-border-color: SILVER;">
                <font>
                   <Font size="17.0" />
                </font>
             </TextField>
-            <PasswordField fx:id="password_field" layoutX="218.0" layoutY="122.0" prefHeight="26.0" prefWidth="264.0" promptText="Password">
+            <PasswordField fx:id="passwordField" layoutX="218.0" layoutY="122.0" prefHeight="26.0" prefWidth="264.0" promptText="Password">
                <font>
                   <Font size="17.0" />
                </font>

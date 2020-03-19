@@ -13,12 +13,10 @@ import java.io.IOException;
  */
 public class Main extends Application {
 
-    private static Scene scene;
-
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(Main.class.getResource("sample.fxml"));
-        stage.setTitle("Hello World");
+        Parent root = FXMLLoader.load(Main.class.getResource("signIn.fxml"));
+        stage.setTitle("My JFX App");
         stage.setScene(new Scene(root, 700, 400));
         stage.show();
     }

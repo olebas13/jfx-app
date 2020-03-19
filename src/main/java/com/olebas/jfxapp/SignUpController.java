@@ -3,12 +3,13 @@ package com.olebas.jfxapp;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class Controller {
+public class SignUpController {
 
     @FXML
     private ResourceBundle resources;
@@ -23,15 +24,28 @@ public class Controller {
     private PasswordField passwordField;
 
     @FXML
-    private Button authSignInButton;
+    private TextField firstNameField;
 
     @FXML
-    private Button loginSignUpButton;
+    private TextField lastNameField;
+
+    @FXML
+    private TextField countryField;
+
+    @FXML
+    private Button submitRegisterButton;
+
+    @FXML
+    private RadioButton maleGenderRadioButton;
+
+    @FXML
+    private RadioButton femaleGenderRadioButton;
 
     @FXML
     void initialize() {
-        authSignInButton.setOnAction(event -> {
-            System.out.println("clicked SignIn button");
-        });
+
+
     }
+
+
 }

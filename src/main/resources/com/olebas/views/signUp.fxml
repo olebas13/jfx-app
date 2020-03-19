@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.olebas.jfxapp.SignUpController">
+    <children>
+        <AnchorPane layoutY="100.0" prefHeight="300.0" prefWidth="700.0" style="-fx-background-color: #fafafa;">
+            <TextField fx:id="loginField" layoutX="40.0" layoutY="14.0" prefHeight="35.0" prefWidth="299.0" promptText="Login" style="-fx-border-color: SILVER;">
+                <font>
+                    <Font size="17.0" />
+                </font>
+            </TextField>
+            <PasswordField fx:id="passwordField" layoutX="357.0" layoutY="15.0" prefHeight="33.0" prefWidth="293.0" promptText="Password">
+                <font>
+                    <Font size="17.0" />
+                </font>
+            </PasswordField>
+            <TextField fx:id="firstNameField" layoutX="357.0" layoutY="74.0" prefHeight="35.0" prefWidth="293.0" promptText="Lastname" style="-fx-border-color: SILVER;">
+                <font>
+                    <Font size="17.0" />
+                </font>
+            </TextField>
+            <TextField fx:id="lastNameField" layoutX="40.0" layoutY="74.0" prefHeight="35.0" prefWidth="299.0" promptText="Firstname" style="-fx-border-color: SILVER;">
+                <font>
+                    <Font size="17.0" />
+                </font>
+            </TextField>
+            <TextField fx:id="countryField" layoutX="214.0" layoutY="181.0" prefHeight="33.0" prefWidth="286.0" promptText="Country" style="-fx-border-color: SILVER;">
+                <font>
+                    <Font size="17.0" />
+                </font>
+            </TextField>
+            <Button fx:id="submitRegisterButton" layoutX="293.0" layoutY="228.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="114.0" style="-fx-background-color: #F39C63;" text="Sign Up" textFill="#fffdfd">
+                <font>
+                    <Font name="SansSerif Bold" size="19.0" />
+                </font>
+            </Button>
+            <HBox layoutX="193.0" layoutY="124.0" prefHeight="44.0" prefWidth="330.0" alignment="CENTER">
+                <fx:define>
+                    <ToggleGroup fx:id="genderGroup" />
+                </fx:define>
+                <children>
+                    <RadioButton text="Male" toggleGroup="$genderGroup" fx:id="maleGenderRadioButton" selected="true" />
+                    <RadioButton text="Female" toggleGroup="$genderGroup" fx:id="femaleGenderRadioButton"/>
+                </children>
+            </HBox>
+            
+        </AnchorPane>
+        <Label layoutX="238.0" layoutY="14.0" text="OLEBAS" textFill="WHITE">
+            <font>
+                <Font name="Chilanka Regular" size="56.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
