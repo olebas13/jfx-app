@@ -15,7 +15,10 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        Parent root = FXMLLoader.load(Main.class.getResource("signIn.fxml"));
+        FXMLLoader loader = new FXMLLoader();
+        loader.setLocation(getClass().getResource("signIn.fxml"));
+        loader.load();
+        Parent root = loader.getRoot();
         stage.setTitle("My JFX App");
         stage.setScene(new Scene(root, 700, 400));
         stage.show();
